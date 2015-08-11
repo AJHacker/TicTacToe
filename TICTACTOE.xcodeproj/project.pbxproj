@@ -20,6 +20,10 @@
 		5FADEC2C15D1B0A10071AFFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FADEC0D15D1B0A10071AFFD /* Foundation.framework */; };
 		5FADEC3415D1B0A10071AFFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5FADEC3215D1B0A10071AFFD /* InfoPlist.strings */; };
 		5FADEC3715D1B0A10071AFFD /* TICTACTOETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FADEC3615D1B0A10071AFFD /* TICTACTOETests.m */; };
+		5FADEC4315D1B43A0071AFFD /* Board.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FADEC4015D1B43A0071AFFD /* Board.png */; };
+		5FADEC4415D1B43A0071AFFD /* O.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FADEC4115D1B43A0071AFFD /* O.png */; };
+		5FADEC4515D1B43A0071AFFD /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FADEC4215D1B43A0071AFFD /* X.png */; };
+		5FC8C5EB15D56C1100EA5F72 /* ComputerPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FC8C5EA15D56C1100EA5F72 /* ComputerPlayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		5FADEC3315D1B0A10071AFFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5FADEC3515D1B0A10071AFFD /* TICTACTOETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TICTACTOETests.h; sourceTree = "<group>"; };
 		5FADEC3615D1B0A10071AFFD /* TICTACTOETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TICTACTOETests.m; sourceTree = "<group>"; };
+		5FADEC4015D1B43A0071AFFD /* Board.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Board.png; path = ../../../FILES/Board.png; sourceTree = "<group>"; };
+		5FADEC4115D1B43A0071AFFD /* O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = O.png; path = ../../../FILES/O.png; sourceTree = "<group>"; };
+		5FADEC4215D1B43A0071AFFD /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = X.png; path = ../../../FILES/X.png; sourceTree = "<group>"; };
+		5FC8C5EA15D56C1100EA5F72 /* ComputerPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ComputerPlayer.m; path = ../../../../.Trash/ComputerPlayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +119,7 @@
 		5FADEC1115D1B0A10071AFFD /* TICTACTOE */ = {
 			isa = PBXGroup;
 			children = (
+				5FC8C5EA15D56C1100EA5F72 /* ComputerPlayer.m */,
 				5FADEC1A15D1B0A10071AFFD /* AppDelegate.h */,
 				5FADEC1B15D1B0A10071AFFD /* AppDelegate.m */,
 				5FADEC1D15D1B0A10071AFFD /* MainStoryboard.storyboard */,
@@ -125,6 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				5FADEC1315D1B0A10071AFFD /* TICTACTOE-Info.plist */,
+				5FADEC4015D1B43A0071AFFD /* Board.png */,
+				5FADEC4115D1B43A0071AFFD /* O.png */,
+				5FADEC4215D1B43A0071AFFD /* X.png */,
 				5FADEC1415D1B0A10071AFFD /* InfoPlist.strings */,
 				5FADEC1715D1B0A10071AFFD /* main.m */,
 				5FADEC1915D1B0A10071AFFD /* TICTACTOE-Prefix.pch */,
@@ -224,6 +236,9 @@
 			files = (
 				5FADEC1615D1B0A10071AFFD /* InfoPlist.strings in Resources */,
 				5FADEC1F15D1B0A10071AFFD /* MainStoryboard.storyboard in Resources */,
+				5FADEC4315D1B43A0071AFFD /* Board.png in Resources */,
+				5FADEC4415D1B43A0071AFFD /* O.png in Resources */,
+				5FADEC4515D1B43A0071AFFD /* X.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +276,7 @@
 				5FADEC1815D1B0A10071AFFD /* main.m in Sources */,
 				5FADEC1C15D1B0A10071AFFD /* AppDelegate.m in Sources */,
 				5FADEC2215D1B0A10071AFFD /* ViewController.m in Sources */,
+				5FC8C5EB15D56C1100EA5F72 /* ComputerPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +381,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TICTACTOE/TICTACTOE-Prefix.pch";
 				INFOPLIST_FILE = "TICTACTOE/TICTACTOE-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -376,6 +393,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TICTACTOE/TICTACTOE-Prefix.pch";
 				INFOPLIST_FILE = "TICTACTOE/TICTACTOE-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -434,6 +452,7 @@
 				5FADEC3C15D1B0A10071AFFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5FADEC3D15D1B0A10071AFFD /* Build configuration list for PBXNativeTarget "TICTACTOETests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +461,7 @@
 				5FADEC3F15D1B0A10071AFFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
